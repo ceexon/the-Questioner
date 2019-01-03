@@ -26,18 +26,16 @@ The questioner app is a web that allows users who are attendees of a meetup to b
 
 ---
 
-> - number of questions asked
-
-- number of questions commented to
-- Top feed questions for upcoming meetups to attend
+    > - number of questions asked
+      - number of questions commented to
+      - Top feed questions for upcoming meetups to attend
 
 > admin
 
 ---
 
-> - create meetup
-
-- delete meetup
+    > - create meetup
+      - delete meetup
 
 # What you require
 
