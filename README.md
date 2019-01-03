@@ -6,7 +6,7 @@ The questioner app is a web that allows users who are attendees of a meetup to b
 
 ---
 
-[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)] [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)] [![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)]
 
 # UI Features
 
