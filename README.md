@@ -11,29 +11,33 @@ The questioner app is a web that allows users who are attendees of a meetup to b
 # UI Features
 
 > user signup page
+
 > user sign in page
+
 > user functions
 
 ---
 
     > - user post question
-    > - user up/down-vote a question
-    > - user comments to questions
+      - user up/down-vote a question
+      - user comments to questions
 
 > user profile
 
 ---
 
-    > - number of questions asked
-    > - number of questions commented to
-    > - Top feed questions for upcoming meetups to attend
+> - number of questions asked
+
+- number of questions commented to
+- Top feed questions for upcoming meetups to attend
 
 > admin
 
 ---
 
-    > - create meetup
-    > - delete meetup
+> - create meetup
+
+- delete meetup
 
 # What you require
 
