@@ -1,0 +1,120 @@
+div.main-page-nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+div.nav-lists {
+    padding: 20px;
+    color: #fff;
+}
+
+a:link {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+a:active {
+    color: #c1c8e4
+}
+
+a:visited {
+    color: #fff;
+}
+
+a:hover {
+    color: #5ab9ea;
+}
+
+span.fa-star {
+    color: gold;
+}
+
+span.fa-thumbtack {
+    color: #3cb14c;
+}
+
+span.fa-bell {
+    color: #990000;
+}
+
+span.fa-id-card {
+    color: #5ab9ea;
+}
+
+h1.wonder {
+    margin-top: 40px;
+}
+
+section.main-meetup-categories {
+    margin-top: 20px;
+}
+
+h3.meetups-available {
+    margin-bottom: 20px;
+    font-size: 1.6em;
+}
+
+footer.main-footer {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    background: #5680e9;
+    max-height: 300px;
+}
+
+div.response-form-box {
+    flex-grow: 8;
+    padding: 50px;
+}
+
+form.resp-form {
+    width: 80%;
+    margin: auto;
+}
+
+textarea.remark {
+    display: block;
+    width: 80%;
+    margin-top: -60px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px 20px;
+    color: #000;
+    border: 1px solid #8860d0;
+}
+
+input.send-remark {
+    border: none;
+    outline: none;
+    margin-left: 25%;
+    display: inline-block;
+}
+
+
+div.footer-nav {
+    flex-grow: 3;
+    border-right: 1px solid #c4c4ca;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 10px;
+}
+
+li a:link,
+li a:active,
+li a:visited {
+    color: #c4c4ca;
+    text-transform: capitalize;
+}
