@@ -9,7 +9,7 @@ body,
 body {
     width: 100vw;
     margin: auto;
-    /* background-color: #bcc3d4; */
+    overflow-x: hidden;
 }
 
 header.main-header {
@@ -68,13 +68,60 @@ div.text-content h1,
     background-color: #1039a0;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 2em;
-    font-weight: 600;
+    font-size: 1.3em;
+    font-weight: 300;
     color: #ffffff;
 }
 
 span.login {
     margin-left: 40px;
+}
+
+section.about-questioner {
+    width: 80%;
+    margin: 40px auto;
+}
+
+h2.motion-mover {
+    color: #1039a0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.6em;
+    text-transform: capitalize;
+}
+
+div.main-functions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+div.actual-functions {
+    width: 30%;
+    text-align: center;
+    padding: 10px 10px 30px;
+    background-color: #cccccc;
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 4px 4px #dcdcdc22;
+    height: 150px;
+}
+
+div.actual-functions span.fas {
+    display: inline-block;
+    font-size: 2.5em;
+    color: #1039a0;
+    padding-bottom: 20px;
+
+}
+
+div.actual-functions p.text-fun {
+    display: block;
+    padding: 10px;
+    color: #000;
+    font-size: 20px;
+    text-transform: capitalize;
 }
 
 section.main-meetup-categories {
@@ -102,7 +149,9 @@ div.category-box {
     border: 1px solid #6060602e;
     margin-bottom: 50px;
     cursor: pointer;
+    box-shadow: 4px 4px 4px #5f636611;
     border-radius: 8px;
+
 }
 
 div.category-box div.header {
@@ -117,13 +166,12 @@ div.header img {
 }
 
 h2.meetup-category-name {
-    position: absolute;
     top: 20%;
     padding: 10px;
     text-align: center;
-    color: #fff;
+    color: #000;
     font-weight: 600;
-    font-size: 2em;
+    font-size: 1em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
@@ -135,7 +183,7 @@ div.descriprion {
 div.descriprion p {
     font-size: 16px;
     font-family: sans-serif;
-    font-weight: 550;
+    font-weight: 500;
     color: #5f6366;
     font-style: oblique;
 }
@@ -144,36 +192,19 @@ div.descriprion p {
     display: none;
 }
 
-section.meetup-members {
-    width: 100%;
-    padding: 40px 50px 20px;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-}
-
-div.all-members,
-div.this-week {
-    width: 50%;
-    position: relative;
+footer.main-footer {
+    padding: 50px;
+    margin-top: 13px;
+    background-image: linear-gradient(#5680e9, #8860d0);
     text-align: center;
 }
 
-div.all-members div,
-div.this-week div {
-    height: 160px;
-    width: 300px;
-    margin: auto;
-    padding: 40px 20px 0;
+.main-footer h2 {
     text-align: center;
-    background-color: #8860d0;
-    font-size: 20px;
-    font-weight: 500;
+    color: #fff;
 }
 
-div.all-members a,
-div.this-week a {
+.main-footer .sign {
     text-decoration: none;
-    font-size: 1.3em;
-    margin-top: 10px;
+    margin-top: 20px;
 }
