@@ -88,11 +88,12 @@ section.main-meetup-categories {
 h3.meetups-available {
     align-self: stretch;
     width: 100%;
-    text-align: center;
+    text-align: justify;
     color: #606060;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 1px;
     margin-bottom: 25px;
+    font-size: 1.8em;
 }
 
 div.category-box {
