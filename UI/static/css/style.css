@@ -61,6 +61,10 @@ div.text-content h1,
     font-size: 2.5em;
 }
 
+a {
+    text-decoration: none;
+}
+
 .sign {
     display: inline-block;
     margin-top: 50px;
@@ -201,6 +205,5 @@ footer.main-footer {
 }
 
 .main-footer .sign {
-    text-decoration: none;
     margin-top: 20px;
 }
