@@ -54,3 +54,12 @@ input[type='submit'] {
     color: #fff;
     font-size: 1.5em;
 }
+
+a.altenative-form-text {
+    display: inline-block;
+    padding: 8px;
+    margin-top: 20px;
+    color: #5680e9;
+    text-decoration: underline;
+    text-decoration-color: #8860d0;
+}
