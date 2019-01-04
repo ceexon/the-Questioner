@@ -73,7 +73,8 @@ div.response-form-box {
     padding: 50px;
 }
 
-form.resp-form {
+form.resp-form,
+.resp-form {
     width: 80%;
     margin: auto;
 }
@@ -281,4 +282,17 @@ button.show-question-form:hover {
 
 button.show-question-form:active {
     box-shadow: 2px 2px 4px #00000066;
+}
+
+form.question-form-f {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+}
+
+form.question-form-f .textarea {
+    width: 90%;
+    border: 2px solid #f6f6f6;
+    outline: none;
+    padding: 15px;
 }
