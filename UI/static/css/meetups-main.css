@@ -296,3 +296,23 @@ form.question-form-f .textarea {
     outline: none;
     padding: 15px;
 }
+
+div.vote-for {
+    width: 230px;
+    padding: 20px;
+}
+
+div.vote-for span {
+    font-size: 1.2em;
+    display: inline-block;
+    margin: auto;
+    cursor: pointer;
+}
+
+span.fa-thumbs-up {
+    color: #5680e9;
+}
+
+span.fa-thumbs-down {
+    color: #990000;
+}
