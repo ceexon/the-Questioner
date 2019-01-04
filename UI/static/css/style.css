@@ -1,0 +1,206 @@
+body,
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+body {
+    width: 100vw;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+header.main-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    background-color: #5680e9;
+    flex-grow: 1;
+}
+
+div.landing-image-box {
+    flex-grow: 1;
+}
+
+div.landing-content {
+    flex-grow: 7;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+    background-image: linear-gradient(#5680e9, #8860d0)
+}
+
+div.landing-content>div {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+div.text-content h1,
+.page-title {
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 2.1em;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 2px;
+    width: 100%;
+    left: 10px;
+    top: 20px;
+
+}
+
+.page-title {
+    position: relative;
+    font-size: 2.5em;
+}
+
+.sign {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 12px;
+    background-color: #1039a0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+span.login {
+    margin-left: 40px;
+}
+
+section.about-questioner {
+    width: 80%;
+    margin: 40px auto;
+}
+
+h2.motion-mover {
+    color: #1039a0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.6em;
+    text-transform: capitalize;
+}
+
+div.main-functions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+div.actual-functions {
+    width: 30%;
+    text-align: center;
+    padding: 10px 10px 30px;
+    background-color: #cccccc;
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 4px 4px #dcdcdc22;
+    height: 150px;
+}
+
+div.actual-functions span.fas {
+    display: inline-block;
+    font-size: 2.5em;
+    color: #1039a0;
+    padding-bottom: 20px;
+
+}
+
+div.actual-functions p.text-fun {
+    display: block;
+    padding: 10px;
+    color: #000;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+section.main-meetup-categories {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding: 10px 5%;
+    justify-content: space-around;
+}
+
+h3.meetups-available {
+    align-self: stretch;
+    width: 100%;
+    text-align: justify;
+    color: #606060;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+div.category-box {
+    width: 24%;
+    height: 310px;
+    border: 1px solid #6060602e;
+    margin-bottom: 50px;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px #5f636611;
+    border-radius: 8px;
+
+}
+
+div.category-box div.header {
+    position: relative;
+    height: 180px;
+}
+
+div.header img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+h2.meetup-category-name {
+    top: 20%;
+    padding: 10px;
+    text-align: center;
+    color: #000;
+    font-weight: 600;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+div.descriprion {
+    padding: 5px 4px;
+}
+
+div.descriprion p {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #5f6366;
+    font-style: oblique;
+}
+
+footer.main-footer {
+    padding: 50px;
+    margin-top: 13px;
+    background-image: linear-gradient(#5680e9, #8860d0);
+    text-align: center;
+}
+
+.main-footer h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.main-footer .sign {
+    text-decoration: none;
+    margin-top: 20px;
+}
