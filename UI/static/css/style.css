@@ -1,0 +1,178 @@
+body,
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+body {
+    width: 100vw;
+    margin: auto;
+    /* background-color: #bcc3d4; */
+}
+
+header.main-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    background-color: #5680e9;
+    flex-grow: 1;
+}
+
+div.landing-image-box {
+    flex-grow: 1;
+}
+
+div.landing-content {
+    flex-grow: 7;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+    background-image: linear-gradient(#5680e9, #8860d0)
+}
+
+div.landing-content>div {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+div.text-content h1,
+.page-title {
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 2.1em;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 2px;
+    width: 100%;
+    left: 10px;
+    top: 20px;
+
+}
+
+.page-title {
+    position: relative;
+    font-size: 2.5em;
+}
+
+.sign {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 12px;
+    background-color: #1039a0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+span.login {
+    margin-left: 40px;
+}
+
+section.main-meetup-categories {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding: 10px 5%;
+    justify-content: space-around;
+}
+
+h3.meetups-available {
+    align-self: stretch;
+    width: 100%;
+    text-align: center;
+    color: #606060;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+div.category-box {
+    width: 24%;
+    height: 310px;
+    border: 1px solid #6060602e;
+    margin-bottom: 50px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+div.category-box div.header {
+    position: relative;
+    height: 180px;
+}
+
+div.header img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+h2.meetup-category-name {
+    position: absolute;
+    top: 20%;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+div.descriprion {
+    padding: 5px 4px;
+}
+
+div.descriprion p {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 550;
+    color: #5f6366;
+    font-style: oblique;
+}
+
+.hidden {
+    display: none;
+}
+
+section.meetup-members {
+    width: 100%;
+    padding: 40px 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+div.all-members,
+div.this-week {
+    width: 50%;
+    position: relative;
+    text-align: center;
+}
+
+div.all-members div,
+div.this-week div {
+    height: 160px;
+    width: 300px;
+    margin: auto;
+    padding: 40px 20px 0;
+    text-align: center;
+    background-color: #8860d0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+div.all-members a,
+div.this-week a {
+    text-decoration: none;
+    font-size: 1.3em;
+    margin-top: 10px;
+}
