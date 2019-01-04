@@ -1,0 +1,56 @@
+section.signup-form-box {
+    width: 45%;
+    padding: 40px 20px;
+    margin: 40px auto 40px 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    position: relative;
+    left: 40%;
+    top: -130px;
+    z-index: 3;
+    border: 1px solid #8860d0;
+
+}
+
+.signup-form {
+    width: 80%;
+    margin: auto;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'] {
+    width: 80%;
+    display: block;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 1px solid #5680e9;
+    outline: none;
+}
+
+
+label {
+    color: #5680e9;
+}
+
+img.thinking-gif {
+    margin-top: -100px;
+    margin-left: 70px;
+}
+
+input[type='password'] {
+    margin-top: 20px;
+}
+
+input[type='submit'] {
+    border: none;
+    outline: none;
+    background-color: #5680e9;
+    display: inline-block;
+    margin-left: 30%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5em;
+}
