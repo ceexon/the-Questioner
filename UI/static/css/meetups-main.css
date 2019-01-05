@@ -1,301 +1,293 @@
 div.main-page-nav {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: nowrap;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 div.nav-lists {
-  padding: 20px;
-  color: #fff;
+    padding: 20px;
+    color: #fff;
 }
 
 a:link {
-  color: #fff;
-  font-weight: 400;
-  font-size: 1.4em;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.4em;
 }
 
 a:active {
-  color: #c1c8e4;
+    color: #c1c8e4;
 }
 
 a:visited {
-  color: #fff;
+    color: #fff;
 }
 
 a:hover {
-  color: #5ab9ea;
+    color: #5ab9ea;
 }
 
 span.fa-star {
-  color: gold;
+    color: gold;
 }
 
 span.fa-thumbtack {
-  color: #3cb14c;
+    color: #3cb14c;
 }
 
 span.fa-bell {
-  color: #990000;
+    color: #990000;
 }
 
 span.fa-id-card {
-  color: #5ab9ea;
+    color: #5ab9ea;
 }
 
 h1.wonder {
-  margin-top: 40px;
+    margin-top: 40px;
 }
 
 section.main-meetup-categories {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 h3.meetups-available {
-  margin-bottom: 20px;
-  font-size: 1.6em;
+    margin-bottom: 20px;
+    font-size: 1.6em;
 }
 
 footer.main-footer {
-  display: flex;
-  text-align: left;
-  justify-content: space-between;
-  flex-grow: 1;
-  flex-wrap: wrap;
-  background: #5680e9;
-  max-height: 300px;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    background: #5680e9;
+    max-height: 300px;
 }
 
 div.response-form-box {
-  flex-grow: 8;
-  padding: 50px;
+    flex-grow: 8;
+    padding: 50px;
 }
 
 form.resp-form,
 .resp-form {
-  width: 80%;
-  margin: auto;
+    width: 80%;
+    margin: auto;
 }
 
 textarea.remark {
-  display: block;
-  width: 80%;
-  margin-top: -60px;
-  outline: none;
-  border: none;
-  background-color: #fff;
-  border-radius: 15px;
-  padding: 10px 20px;
-  color: #000;
-  border: 1px solid #8860d0;
+    display: block;
+    width: 80%;
+    margin-top: -60px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px 20px;
+    color: #000;
+    border: 1px solid #8860d0;
 }
 
 input.send-remark {
-  border: none;
-  outline: none;
-  margin-left: 25%;
-  display: inline-block;
+    border: none;
+    outline: none;
+    margin-left: 25%;
+    display: inline-block;
 }
 
 div.footer-nav {
-  flex-grow: 3;
-  border-right: 1px solid #c4c4ca;
+    flex-grow: 3;
+    border-right: 1px solid #c4c4ca;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 li {
-  padding: 10px;
+    padding: 10px;
 }
 
 li a:link,
 li a:active,
 li a:visited {
-  color: #c4c4ca;
-  text-transform: capitalize;
+    color: #c4c4ca;
+    text-transform: capitalize;
 }
 
 /* Add Questions page */
 
 section.chosen-meetup {
-  border: 1px solid #f9f9f9;
-  width: 100%;
-  display: flex;
-  flex-grow: 1;
-  flex-wrap: nowrap;
-  padding: 30px 5%;
-  background-image: linear-gradient(#e6e2ec, #e6e2ec);
+    border: 1px solid #f9f9f9;
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    padding: 30px 5%;
+    background-image: linear-gradient(#e6e2ec, #e6e2ec);
 }
 
 .chosen-meetup div.header-meetup img {
-  max-height: 300px;
-  max-width: 400px;
+    max-height: 300px;
+    max-width: 400px;
 }
 
 h3.meetup-select-title {
-  font-size: 2em;
-  color: #000;
-  font-weight: 550;
-  text-align: center;
-  padding: 20px;
-  color: #546;
+    font-size: 2em;
+    color: #000;
+    font-weight: 550;
+    text-align: center;
+    padding: 20px;
+    color: #546;
 }
 
 div.description-select p.desctext-select {
-  width: 90%;
-  padding: 20px;
-  margin: auto;
-  text-align: center;
-  font-size: 20px;
-  letter-spacing: 1px;
-  font-family: cursive;
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: cursive;
 }
 
 div.meetup-details {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-grow: 1;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-grow: 1;
 }
 
 div.key-details {
-  width: 33%;
-  text-align: center;
-  font-size: 1.5em;
+    width: 33%;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 .key-details span.fas {
-  color: #5680e9;
-  font-size: 2em;
+    color: #5680e9;
+    font-size: 2em;
 }
 
 .key-details p a {
-  color: #8860d0;
-  font-size: 1em;
+    color: #8860d0;
+    font-size: 1em;
 }
 
 .key-details p a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 section.question-views {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 div.user-views {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: auto;
-  flex-direction: row;
-  justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-div.user-views > div {
-  padding: 10px;
+div.user-views>div {
+    padding: 10px;
 }
 
-div.user-views > div p {
-  width: 120px;
-  height: 120px;
-  margin: auto;
-  margin-left: 16%;
-  border: 7px solid #5680e9;
-  border-radius: 75%;
-  padding: 30px;
-  text-align: center;
-  color: #5680e9;
+div.user-views>div p {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    margin-left: 16%;
+    border: 7px solid #5680e9;
+    border-radius: 75%;
+    padding: 30px;
+    text-align: center;
+    color: #5680e9;
 }
 
-div.user-views > div img {
-  width: 150px;
-  margin: auto;
+div.user-views>div img {
+    width: 150px;
+    margin: auto;
 }
 
 div.question-asked {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
 
 div.a-question {
-  width: 80%;
-  margin: 5px auto;
-  text-align: justify;
-  border: 1px solid #f3f3f3;
-  padding: 10px;
-  font-size: 18px;
-  border-radius: 15px;
-  display: flex;
-  justify-content: space-evenly;
+    width: 80%;
+    margin: 5px auto;
+    text-align: justify;
+    border: 1px solid #f3f3f3;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-div.a-question > img {
-  width: 100px;
-  height: 100px;
-  border-radius: 75%;
-  margin-left: 30px;
-  flex-grow: 3;
+div.a-question>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 75%;
+    margin-left: 30px;
+    flex-grow: 3;
 }
 
-div.a-question > img,
-div.a-question > p {
-  display: inline-block;
-  flex-grow: 7;
-  padding: 10px;
+div.a-question>img,
+div.a-question>p {
+    display: inline-block;
+    flex-grow: 7;
+    padding: 10px;
 }
 
 div.ask-box {
-  border: none;
+    border: none;
 }
 
 button.show-question-form {
-  border: none;
-  outline: none;
-  background-color: #5680e9;
-  padding: 10px 20px;
-  color: #fff;
-  font-weight: 500;
-  font-size: 1.5em;
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 4px 4px 4px #00000066;
+    border: none;
+    outline: none;
+    background-color: #5680e9;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5em;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px #00000066;
 }
 
 button.show-question-form:hover {
-  box-shadow: 2px 2px 4px #00000066;
+    box-shadow: 2px 2px 4px #00000066;
 }
 
 button.show-question-form:active {
-  box-shadow: 2px 2px 4px #00000066;
+    box-shadow: 2px 2px 4px #00000066;
 }
 
 form.question-form-f {
-  width: 100%;
-  margin: auto;
-  padding: 10px;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
 }
 
 form.question-form-f .textarea {
-  width: 90%;
-  border: 2px solid #f6f6f6;
-  outline: none;
-  padding: 15px;
-}
-
-button.comment-button {
-  padding: 5px;
-  font-size: 1em;
-  font-weight: 400;
-  display: block;
-  margin-top: 8px;
+    width: 90%;
+    border: 2px solid #f6f6f6;
+    outline: none;
+    padding: 15px;
 }
 
 div.vote-for {
@@ -316,4 +308,12 @@ span.fa-thumbs-up {
 
 span.fa-thumbs-down {
     color: #990000;
+}
+
+button.comment-button {
+    padding: 5px;
+    font-size: 1em;
+    font-weight: 400;
+    display: block;
+    margin-top: 8px;
 }
