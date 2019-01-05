@@ -297,3 +297,23 @@ button.comment-button {
   display: block;
   margin-top: 8px;
 }
+
+div.vote-for {
+    width: 230px;
+    padding: 20px;
+}
+
+div.vote-for span {
+    font-size: 1.2em;
+    display: inline-block;
+    margin: auto;
+    cursor: pointer;
+}
+
+span.fa-thumbs-up {
+    color: #5680e9;
+}
+
+span.fa-thumbs-down {
+    color: #990000;
+}
