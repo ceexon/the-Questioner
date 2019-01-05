@@ -111,3 +111,30 @@
     width: 44%;
   }
 }
+
+@media screen and (max-width: 400px) {
+  div.landing-content .main-page-nav {
+    top: 50px;
+  }
+
+  span.page-title {
+    position: absolute;
+    top: 200px;
+    left: 60px;
+  }
+
+  div.actual-functions {
+    width: 45%;
+    font-size: 14px;
+    height: 200px;
+  }
+
+  div.actual-functions:last-child {
+    margin-top: 20px;
+    width: 60%;
+  }
+
+  div.category-box {
+    width: 48%;
+  }
+}
