@@ -63,3 +63,24 @@ a.altenative-form-text {
     text-decoration: underline;
     text-decoration-color: #8860d0;
 }
+
+section.quest-in-brief {
+    position: absolute;
+    top: 60%;
+    padding: 50px;
+    width: 40vw;
+    transform: rotate(-15deg)
+}
+
+section.quest-in-brief h2 {
+    font-weight: 550;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+section.quest-in-brief .text-desc {
+    line-height: 2;
+    font-size: 18px;
+}
+
+/* Rsponsive */
