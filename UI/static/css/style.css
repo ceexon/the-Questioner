@@ -149,7 +149,7 @@ h3.meetups-available {
 
 div.category-box {
     width: 24%;
-    height: 310px;
+    height: 350px;
     border: 1px solid #6060602e;
     margin-bottom: 50px;
     cursor: pointer;
@@ -190,6 +190,7 @@ div.descriprion p {
     font-weight: 500;
     color: #5f6366;
     font-style: oblique;
+    padding: 5px 0 10px;
 }
 
 footer.main-footer {
