@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded',
   function () {
-    var showProf = document.querySelector('.fas.fa-bars')
+    var showProf = document.querySelector('span.fas.fa-bars')
     var profile = document.querySelector('#prof-panel')
     showProf.addEventListener('click', function (e) {
       e.preventDefault()
