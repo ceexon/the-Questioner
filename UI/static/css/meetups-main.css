@@ -508,10 +508,6 @@ form.question-form-f .textarea {
         justify-content: space-around;
         flex-wrap: wrap;
     }
-
-    span.hide-icon {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 550px) {
