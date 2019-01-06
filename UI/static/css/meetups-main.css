@@ -125,63 +125,83 @@ section.chosen-meetup {
     border: 1px solid #f9f9f9;
     width: 100%;
     display: flex;
+    flex-direction: row;
     flex-grow: 1;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding: 30px 5%;
     background-image: linear-gradient(#e6e2ec, #e6e2ec);
 }
 
+.chosen-meetup div.header-meetup {
+    flex-grow: 3;
+    flex-basis: 30%;
+}
+
 .chosen-meetup div.header-meetup img {
+    max-width: 300px;
     max-height: 300px;
-    max-width: 400px;
+}
+
+section.chosen-meetup .description-select {
+    flex-grow: 7;
+    flex-basis: 70%;
 }
 
 h3.meetup-select-title {
-    font-size: 2em;
+    font-size: 1.5em;
     color: #000;
     font-weight: 550;
     text-align: center;
-    padding: 20px;
+    padding: 20px 20px 0;
     color: #546;
 }
+
 
 div.description-select p.desctext-select {
     width: 90%;
     padding: 20px;
     margin: auto;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 1px;
     font-family: cursive;
 }
 
 div.meetup-details {
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     flex-grow: 1;
+    justify-content: space-around;
 }
 
+
 div.key-details {
-    width: 33%;
-    text-align: center;
-    font-size: 1.5em;
+    flex-grow: 1;
 }
 
 .key-details span.fas {
     color: #5680e9;
+    font-weight: 550;
     font-size: 2em;
+    padding-bottom: 5px;
+}
+
+.key-details p {
+    color: #000;
+    font-weight: 200;
+    font-size: 18px;
 }
 
 .key-details p a {
-    color: #8860d0;
-    font-size: 1em;
+    color: #000;
+    font-size: 1.3em;
+    color: #5ab9ea;
 }
 
-.key-details p a:hover {
-    text-decoration: underline;
-}
 
+/* question asked and asking area */
 section.question-views {
     display: flex;
     flex-direction: column;
@@ -212,94 +232,59 @@ div.user-views>div p {
     color: #5680e9;
 }
 
-div.user-views>div img {
-    width: 150px;
-    margin: auto;
-}
-
 div.question-asked {
     width: 80%;
     margin: auto;
     display: flex;
-    flex-direction: column;
     padding: 10px;
-}
-
-div.a-question {
-    width: 80%;
-    margin: 5px auto;
-    text-align: justify;
     border: 1px solid #f3f3f3;
-    padding: 10px;
-    font-size: 18px;
+    flex-grow: 1;
+    flex-direction: column;
+    margin-bottom: 16px;
     border-radius: 15px;
-    display: flex;
-    justify-content: space-evenly;
 }
 
-div.a-question>img {
-    width: 100px;
-    height: 100px;
-    border-radius: 75%;
-    margin-left: 30px;
+div.question-asked div.a-question {
+    padding: 20px;
+    display: flex;
+    flex-grow: 1;
+}
+
+div.user-image {
     flex-grow: 3;
 }
 
-div.a-question>img,
-div.a-question>p {
-    display: inline-block;
+div.a-question div.user-image img {
+    border-radius: 75%;
+    height: 100px;
+    width: 100px;
+}
+
+div.a-question div.quest-content {
     flex-grow: 7;
-    padding: 10px;
-}
-
-div.ask-box {
-    border: none;
-}
-
-button.show-question-form {
-    border: none;
-    outline: none;
-    background-color: #5680e9;
-    padding: 10px 20px;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.5em;
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 4px 4px 4px #00000066;
-}
-
-button.show-question-form:hover {
-    box-shadow: 2px 2px 4px #00000066;
-}
-
-button.show-question-form:active {
-    box-shadow: 2px 2px 4px #00000066;
-}
-
-form.question-form-f {
-    width: 100%;
-    margin: auto;
-    padding: 10px;
-}
-
-form.question-form-f .textarea {
-    width: 90%;
-    border: 2px solid #f6f6f6;
-    outline: none;
-    padding: 15px;
-}
-
-div.vote-for {
-    width: 230px;
     padding: 20px;
 }
 
-div.vote-for span {
+p.quiz-content {
+    flex-grow: 7;
+}
+
+div.vote-for {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    vertical-align: middle;
+
+}
+
+span.voter {
     font-size: 1.2em;
     display: inline-block;
     margin: auto;
     cursor: pointer;
+    vertical-align: middle;
 }
 
 span.fa-thumbs-up {
@@ -308,17 +293,95 @@ span.fa-thumbs-up {
 
 span.fa-thumbs-down {
     color: #990000;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+span.number-up-vote {
+    color: #181;
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+span.number-down-vote {
+    color: #818;
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 5px;
 }
 
 button.comment-button {
-    padding: 5px;
     font-size: 1em;
     font-weight: 400;
+    border: none;
+    outline: none;
+    background-color: #5680e9;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ask question box + js */
+
+button.show-question-form {
+    border: none;
+    outline: none;
+    background-color: #5680e9;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.5em;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px #00000066;
+    margin: auto;
+}
+
+button.show-question-form:hover {
+    box-shadow: 2px 2px 4px #00000066;
+}
+
+button.show-question-form:active {
+    box-shadow: 0px 0px 0px #00000066;
+}
+
+form.question-form-f {
+    width: 100%;
+    margin: auto;
+}
+
+form.question-form-f .textarea {
+    width: 90%;
+    margin: auto;
+    outline: none;
+    padding: 15px;
     display: block;
-    margin-top: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+}
+
+.ask-box {
+    position: relative;
+}
+
+.hide-btn {
+    position: absolute;
+    font-size: 1.5em;
+    top: 10px;
+    right: 10px;
+    color: #000;
+    cursor: pointer;
 }
 
 /* Responsive meetups page */
+@media screen and (max-width: 1130px) {
+    .header-meetup img {
+        width: 80%;
+
+    }
+}
 
 @media screen and (max-width: 950px) {
     div.h-3-hide {
@@ -378,6 +441,23 @@ button.comment-button {
     .footer-nav ul li {
         display: inline;
     }
+
+    section.chosen-meetup {
+        flex-direction: column;
+    }
+
+    section.chosen-meetup .header-meetup,
+    section.chosen-meetup .description-select {
+        width: 100%;
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    div.header-meetup img {
+        width: 80%;
+
+    }
+
 }
 
 @media screen and (max-width: 650px) {
@@ -432,4 +512,40 @@ button.comment-button {
     span.hide-icon {
         display: none;
     }
+}
+
+@media screen and (max-width: 550px) {
+    div.user-views {
+        padding: 0;
+    }
+
+    div.a-question {
+        flex-direction: column;
+    }
+
+    div.user-image {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    footer .response-form-box {
+        width: 100%;
+        margin: 0;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    form.resp-form,
+    textarea.remark {
+        width: 96%;
+        margin: auto;
+    }
+
+    input.send-remar {
+        width: 100%;
+    }
+
 }
