@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded',
 		dropFormButton.addEventListener('click', function (e) {
 			e.preventDefault();
 			this.style.display = 'none';
+			if (dropFormButton.textContent == "Add Comment") {
+				submitBtn.setAttribute('value', 'Add Comment');
+			}
 			this.parentNode.appendChild(dropForm);
 			this.parentNode.appendChild(hideButton);
 		})
@@ -39,21 +42,39 @@ document.addEventListener('DOMContentLoaded',
 
 		dropForm.addEventListener('submit', function (e) {
 			e.preventDefault();
-			var value = this.querySelector('textarea').value;
+			const questView = document.querySelector('.question-views');
+			if (dropFormButton.textContent == "Add a question") {
+				var value = this.querySelector('textarea').value;
 
-			if (value == "" || value.trim() == "") {
-				e.preventDefault();
-				formFieldT.style.borderColor = "red";
-			} else {
-				const questView = document.querySelector('.question-views');
-				const questBox = document.querySelector('.question-asked');
-				const newQuestion = questBox.cloneNode(true);
-				questView.appendChild(newQuestion)
-				questView.removeChild(dropFormButton.parentNode.parentNode)
-				dropFormButton.parentNode.removeChild(dropForm)
-				dropFormButton.parentNode.removeChild(hideButton)
-				dropFormButton.style.display = "block"
-				questView.appendChild(dropFormButton.parentNode.parentNode)
+				if (value == "" || value.trim() == "") {
+					e.preventDefault();
+					formFieldT.style.borderColor = "red";
+				} else {
+					const questBox = document.querySelector('.question-asked');
+					const newQuestion = questBox.cloneNode(true);
+					questView.appendChild(newQuestion)
+					questView.removeChild(dropFormButton.parentNode.parentNode);
+					dropFormButton.parentNode.removeChild(dropForm);
+					dropFormButton.parentNode.removeChild(hideButton);
+					dropFormButton.style.display = "block";
+					questView.appendChild(dropFormButton.parentNode.parentNode);
+				}
+			} else if (dropFormButton.textContent == "Add Comment") {
+				var value = this.querySelector('textarea').value;
+				if (value == "" || value.trim() == "") {
+					e.preventDefault();
+					formFieldT.style.borderColor = "red";
+				} else {
+					const aComment = document.querySelector('.comment-box').cloneNode(true)
+					questView.appendChild
+					questView.appendChild(aComment)
+					questView.removeChild(dropFormButton.parentNode.parentNode);
+					dropFormButton.parentNode.removeChild(dropForm);
+					dropFormButton.parentNode.removeChild(hideButton);
+					dropFormButton.style.display = "block";
+					questView.appendChild(dropFormButton.parentNode.parentNode);
+
+				}
 			}
 		})
 	})

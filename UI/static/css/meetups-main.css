@@ -220,6 +220,17 @@ div.user-views>div {
     padding: 10px;
 }
 
+span.my-user-name {
+    padding: 10px;
+    color: #818;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+span.my-user-name:hover {
+    text-decoration: underline;
+}
+
 div.user-views>div p {
     width: 120px;
     height: 120px;
@@ -375,6 +386,29 @@ form.question-form-f .textarea {
     cursor: pointer;
 }
 
+/* comment box */
+
+div.question-asked.comment-box {
+    margin-left: 15%;
+    padding: 10px;
+}
+
+div.a-question div.user-image.comment-image img {
+    width: 60px;
+    height: 60px;
+}
+
+div.question-asked div.a-question.com-que {
+    padding: 5px;
+}
+
+div.a-question div.quest-content.comment-content {
+    padding: 10px;
+}
+
+
+
+
 /* Responsive meetups page */
 @media screen and (max-width: 1130px) {
     .header-meetup img {
@@ -521,6 +555,10 @@ form.question-form-f .textarea {
 
     div.user-image {
         text-align: center;
+    }
+
+    div.a-question div.user-image.comment-image img {
+        display: none;
     }
 }
 
