@@ -17,8 +17,7 @@ header.main-header div.landing-image-box,
 .nav-link-out>div {
     align-self: flex-end;
     margin-bottom: 20px;
-    text-align: right;
-    position: relative;
+    text-align: left;
 }
 
 section.main-user-page {
@@ -31,6 +30,7 @@ section.side-nav-panel {
     width: 250px;
     padding: 30px 20px;
     border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
     border-top: 1px solid #cccccc;
     box-shadow: 4px 4px 4px #cccccc99;
     margin-top: 10px;
@@ -224,6 +224,10 @@ h3.meetup-title {
     padding-bottom: 10px;
 }
 
+span.fas.fa-bars {
+    display: none;
+}
+
 /* responsive profile */
 
 @media screen and (max-width: 1000px) {
@@ -233,16 +237,56 @@ h3.meetup-title {
         margin: auto;
     }
 
-    span.fa-bars {
+    span.fas.fa-bars {
         font-size: 1.8em;
         color: #4258b3;
         position: absolute;
         left: 20px;
         top: 20px;
+        cursor: pointer;
+        display: block;
     }
 
     .hide-from-prof {
         display: none;
+    }
+
+    .show-on-prof {
+        display: block;
+        z-index: 3;
+        background-color: #fff;
+    }
+
+    span.fas.fa-times {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    section.main-content-prof {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header.main-header#main-header {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header.main-header div.landing-image-box {
+        height: 100px;
+    }
+
+    header.main-header div.landing-image-box,
+    .nav-link-out {
+        width: 100%;
+    }
+
+    div.nav-link-out>div {
+        width: 40%;
+        text-align: center;
     }
 
 }
