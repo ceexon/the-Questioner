@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Questioner</title>
+  <link rel="icon" href="../static/images/logos/questioner-logo-2.png" type="image/icon" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../static/css/all.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="../static/css/style.css" />
+  <link rel="stylesheet" href="../static/css/meetups-main.css">
+  <link rel="stylesheet" href="../static/css/profiles.css">
+  <script src="../static/js/profile.js"></script>
+</head>
+
+<body>
+  <header class="main-header" id="main-header">
+    <div class="landing-image-box">
+      <a href="index.html"><span class="page-title">Questioner</span></a>
+    </div>
+    <div class="nav-link-out">
+      <div class="meetups">
+        <a href="meetups.html" class="nav-link"><span class="fas fa-home"></span> Meetups</a>
+      </div>
+      <div class="log-out">
+        <a href="meetups.html" class="nav-link"><span class="fas fa-sign-out-alt"></span> logout</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="main-user-page">
+    <span class="fas fa-bars"></span>
+
+    <section class="side-nav-panel hide-from-prof" id="prof-panel">
+      <span class="fas fa-times"></span>
+      <div class="user-name-pro">
+        <h3 class="my-name">
+          Admin
+        </h3>
+      </div>
+      <div class="user-prof-image">
+        <img src="../static/images/profiles/admin.png" alt="" class="prof-image">
+      </div>
+      <div class="my-likes">
+        <p class="what-i-like">
+          <span class="like like-1">Javascript | </span>
+          <span class="like like-2">Python | </span>
+          <span class="like like-3"> Cooking</span>
+        </p>
+      </div>
+      <div class="user-page-nav">
+        <nav class="navbar-prof">
+          <ul class="prof-page-link-list">
+            <li class="prof-page-link">
+              <a href="#" class="prof-page-a">
+                <span class="fas fa-user-edit"></span> Edit profile
+              </a>
+            </li>
+            <li class="prof-page-link">
+              <a href="#" class="prof-page-a">
+                <span class="fas fa-chart-pie"></span> Meetup stats
+              </a>
+            </li>
+            <li class="prof-page-link">
+              <a href="#" class="prof-page-a fav">
+                <span class="fas fa-plus"></span> add meetup
+              </a>
+            </li>
+            <li class="prof-page-link">
+              <a href="#" class="prof-page-a">
+                <span class="fas fa-award"></span> my meetups
+              </a>
+            </li>
+            <li class="prof-page-link">
+              <a href="#" class="prof-page-a del">
+                <span class="fas fa-trash-alt"></span> delete meetup
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section class="main-content-prof">
+      <div class="page page-1 active">
+        <h1 class="activity-title">All Meetup Details </h1>
+        <div class="activity-stats">
+          <div class="activity-charts attended">
+            <h1 class="activity-title">
+              Active
+            </h1>
+            <span class="fas fa-toggle-on"></span>
+            <span class="act-numbers">
+              35
+            </span>
+          </div>
+          <div class="activity-charts to-attend">
+            <h1 class="activity-title">
+              Created
+            </h1>
+            <span class="far fa-plus-square"></span>
+            <span class="act-numbers">
+              5
+            </span>
+          </div>
+          <div class="activity-charts my-questions">
+            <h1 class="activity-title">
+              Deleted
+            </h1>
+            <span class="fas fa-trash"></span>
+            <span class="act-numbers">
+              20
+            </span>
+          </div>
+        </div>
+        <div class="top-feed">
+          <h1 class="activity-title">
+            Proposed Meetups
+          </h1>
+          <div class="admin-feeds">
+            <div class="feed-box feed-1">
+              <div class="feed-image">
+                <img src="../static/images/meetup-types/social/cool-rainbow-meetup.jpeg" alt="" class="meetup-pic">
+              </div>
+              <div class="feed-text">
+                <h3 class="meetup-title">I've Missed you Friends</h3>
+                <p class="feed-quiz">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ea?
+                </p>
+              </div>
+
+            </div>
+            <div class="add-meetup">
+              <button class="add-mtp-btn">Add Meetup</button>
+            </div>
+          </div>
+          <div class="admin-feeds">
+            <div class="feed-box feed-2">
+              <div class="feed-image">
+                <img src="../static/images/meetup-types/buss/marketting meetup.png" alt="" class="meetup-pic">
+              </div>
+              <div class="feed-text">
+                <h3 class="meetup-title">Lets handle marketting in a new style</h3>
+                <p class="feed-quiz">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ea?
+                </p>
+              </div>
+
+            </div>
+            <div class="add-meetup">
+              <button class="add-mtp-btn">Add Meetup</button>
+            </div>
+          </div>
+          <div class="admin-feeds">
+            <div class="feed-box feed-3">
+              <div class="feed-image">
+                <img src="../static/images/meetup-types/girl/girl-boss-meetup.jpeg" alt="" class="meetup-pic">
+              </div>
+              <div class="feed-text">
+                <h3 class="meetup-title">Women on the Move Meetup</h3>
+                <p class="feed-quiz">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ea?
+                </p>
+              </div>
+
+            </div>
+            <div class="add-meetup">
+              <button class="add-mtp-btn">Add Meetup</button>
+            </div>
+          </div>
+        </div>
+        <div class="page page-2 inactive"></div>
+        <div class="page page-3 inactive"></div>
+        <div class="page page-4 inactive"></div>
+        <div class="page page-5 inactive"></div>
+    </section>
+  </section>
+
+  <footer class="main-footer">
+    <div class="footer-children footer-nav">
+      <ul class="navbar">
+        <li class="foot-nav-items">
+          <a href="#" class="foot-nav-links"><span class="fas fa-home"></span> Home</a>
+        </li>
+
+        <li class="foot-nav-items"><a href="#" class="foot-nav-links"><span class="fas fa-envelope"></span>
+            Contacts</a>
+        </li>
+
+        <li class="foot-nav-items">
+          <a href="#" class="foot-nav-links"><i class="fas fa-info-circle"></i> About</a>
+        </li>
+
+        <li class="foot-nav-items">
+          <a href="#" class="foot-nav-links"><span class="fas fa-comments"></span> FAQs</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-children response-form-box">
+      <form action="" class="resp-form">
+        <textarea name="" id="" rows="10" class="remark" placeholder="Leave a comment on how this page can be improved to serve you better"></textarea>
+        <input type="submit" role="button" value="send your comment" class="send-remark sign">
+      </form>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

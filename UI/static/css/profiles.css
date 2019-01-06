@@ -148,6 +148,7 @@ div.activity-stats div.activity-charts {
     width: 250px;
     margin-bottom: 35px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 div.activity-charts h1.activity-title {
@@ -158,12 +159,27 @@ span.fa-chart-bar,
 span.fa-signal,
 span.fa-question,
 span.fa-quote-right,
-span.act-numbers {
+span.act-numbers,
+span.fa-toggle-on,
+span.fa-plus-square,
+span.fa-trash {
     font-size: 3em;
     display: block;
     margin: auto;
-    width: 30%;
+    width: 35%;
     color: #aa3ebb;
+}
+
+span.fa-toggle-on {
+    color: #4258b3;
+}
+
+span.fa-plus-square {
+    color: #24b32a;
+}
+
+span.fa-trash {
+    color: red;
 }
 
 span.act-numbers {
@@ -228,6 +244,35 @@ span.fas.fa-bars {
     display: none;
 }
 
+li.prof-page-link a.prof-page-a.del {
+    color: red;
+}
+
+div.admin-feeds {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+div.add-meetup {
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+}
+
+button.add-mtp-btn {
+    color: #fff;
+    background-color: #4aca5f;
+    width: 30%;
+    margin: auto;
+    padding: 10px 15px;
+    font-weight: 500;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
 /* responsive profile */
 
 @media screen and (max-width: 1000px) {
@@ -287,6 +332,11 @@ span.fas.fa-bars {
     div.nav-link-out>div {
         width: 40%;
         text-align: center;
+    }
+
+    button.add-mtp-btn {
+        width: 50%;
+        margin: auto;
     }
 
 }
