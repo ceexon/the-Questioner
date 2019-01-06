@@ -292,12 +292,34 @@ span.fa-thumbs-up {
 
 span.fa-thumbs-down {
     color: #990000;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+span.number-up-vote {
+    color: #181;
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+span.number-down-vote {
+    color: #818;
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 5px;
 }
 
 button.comment-button {
-    padding: 5px;
     font-size: 1em;
     font-weight: 400;
+    border: none;
+    outline: none;
+    background-color: #5680e9;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 /* ask question box + js */
