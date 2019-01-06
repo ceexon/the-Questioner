@@ -324,21 +324,18 @@ button.comment-button {
 
 /* ask question box + js */
 
-div.ask-box {
-    border: none;
-}
-
 button.show-question-form {
     border: none;
     outline: none;
     background-color: #5680e9;
     padding: 10px 20px;
     color: #fff;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.5em;
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 4px 4px 4px #00000066;
+    margin: auto;
 }
 
 button.show-question-form:hover {
@@ -346,20 +343,35 @@ button.show-question-form:hover {
 }
 
 button.show-question-form:active {
-    box-shadow: 2px 2px 4px #00000066;
+    box-shadow: 0px 0px 0px #00000066;
 }
 
 form.question-form-f {
     width: 100%;
     margin: auto;
-    padding: 10px;
 }
 
 form.question-form-f .textarea {
     width: 90%;
-    border: 2px solid #f6f6f6;
+    margin: auto;
     outline: none;
     padding: 15px;
+    display: block;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+}
+
+.ask-box {
+    position: relative;
+}
+
+.hide-btn {
+    position: absolute;
+    font-size: 1.5em;
+    top: 10px;
+    right: 10px;
+    color: #000;
+    cursor: pointer;
 }
 
 /* Responsive meetups page */
