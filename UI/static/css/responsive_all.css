@@ -25,7 +25,7 @@
   }
 
   header.main-header {
-    height: 280px;
+    height: 100%;
   }
 
   div.landing-image {
@@ -65,7 +65,7 @@
   header.main-header {
     flex-direction: column;
     height: 100%;
-    display: relative;
+    height: 300px;
   }
 
   div.landing-image-box {
