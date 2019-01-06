@@ -31,15 +31,15 @@ document.addEventListener('DOMContentLoaded',
 		})
 
 		hideButton.addEventListener('click', function (e) {
-			e.preventDefault();;
-			this.parentNode.removeChild(dropForm);;
-			this.parentNode.removeChild(this);;
-			dropFormButton.style.display = "block";;
+			e.preventDefault();
+			this.parentNode.removeChild(dropForm);
+			this.parentNode.removeChild(this);
+			dropFormButton.style.display = "block";
 		})
 
 		dropForm.addEventListener('submit', function (e) {
-			e.preventDefault();;
-			var value = this.querySelector('textarea').value;;
+			e.preventDefault();
+			var value = this.querySelector('textarea').value;
 
 			if (value == "" || value.trim() == "") {
 				e.preventDefault();
