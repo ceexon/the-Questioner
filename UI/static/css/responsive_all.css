@@ -62,7 +62,7 @@
 }
 
 @media screen and (max-width: 650px) {
-  header.main-header {
+  header#hdd.main-header {
     flex-direction: column;
     height: 100%;
     height: 300px;
