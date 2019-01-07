@@ -136,7 +136,8 @@ section.main-meetup-categories {
     justify-content: space-around;
 }
 
-h3.meetups-available {
+h3.meetups-available,
+.all-meetups {
     align-self: stretch;
     width: 100%;
     text-align: justify;
@@ -145,6 +146,13 @@ h3.meetups-available {
     letter-spacing: 1px;
     margin-bottom: 25px;
     font-size: 1.8em;
+    position: relative;
+}
+
+h3.all-meetups {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
 }
 
 div.category-box {
@@ -207,4 +215,17 @@ footer.main-footer {
 
 .main-footer .sign {
     margin-top: 20px;
+}
+
+.del-meets {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    z-index: 4;
+    padding: 2%;
+    background-color: #000;
 }
