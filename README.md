@@ -6,6 +6,8 @@ The questioner app is a web that allows users who are attendees of a meetup to b
 
 **Badges**
 
+[![Build Status](https://travis-ci.org/kburudi/the-Questioner.svg?branch=develop)](https://travis-ci.org/kburudi/the-Questioner) [![Coverage Status](https://coveralls.io/repos/github/kburudi/the-Questioner/badge.svg?branch=develop)](https://coveralls.io/github/kburudi/the-Questioner?branch=develop)
+
 The Related Pivotal tracker board is **[Here](https://www.pivotaltracker.com/n/projects/2235288)**
 
 ## What is required
