@@ -1,2 +1,5 @@
 .vscode/
 env/
+*.pyc
+__pyc__/
+__pycache__/
