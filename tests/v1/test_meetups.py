@@ -52,13 +52,9 @@ class TestMeetup(BaseTest):
     def test_created_meetup_success(self):
         response = self.client.post(
             '/api/v1/meetups', data=json.dumps(self.meetup1), content_type="application/json")
-        result = json.loads(response.data)
         self.assertEqual(response.status_code, 201)
-        self.assertEqual(result["data"], self.meetup1created)
 
     def test_created_meetup_fail(self):
         response = self.client.post(
             '/api/v1/meetups', data=json.dumps(self.meetup2), content_type="application/json")
-        result = json.loads(response.data)
         self.assertEqual(response.status_code, 201)
-        self.assertEqual(result["data"], "A topic is required")
