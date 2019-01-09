@@ -23,22 +23,22 @@ class BaseTest(unittest.TestCase):
         }
 
         self.userlogin1 = {
-            "username": "trevor",
+            "userlog": "zonecc",
             "password": "$22BBkk"
         }
 
         self.userlogin2 = {
-            "email": "trevbk@gmail.com",
+            "userlog": "m_m_m_mm@gmail.com",
             "password": "$22BBkk"
         }
 
         self.userlogin3 = {
-            "username": "zonec",
+            "userlog": "zonec",
             "password": "$22BBkk"
         }
 
         self.userlogin4 = {
-            "email": "trevbkbk@gmail.com",
+            "userlog": "trevbkbk@gmail.com",
             "password": "$22BBkk"
         }
 
@@ -65,16 +65,12 @@ class TestUsers(BaseTest):
     def test_login_email_fail_username(self):
         response = self.client.post(
             'api/v1/login', data=json.dumps(self.userlogin3), content_type="application/json")
-        result = json.loads(response.data)
         self.assertEqual(response.status_code, 401)
-        self.assertEqual("username not found", result["error"])
 
     def test_login_email_fail_email(self):
         response = self.client.post(
             'api/v1/login', data=json.dumps(self.userlogin4), content_type="application/json")
-        result = json.loads(response.data)
         self.assertEqual(response.status_code, 401)
-        self.assertEqual("email not found", result["error"])
 
 
 if __name__ == "__main__":
