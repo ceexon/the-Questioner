@@ -58,3 +58,8 @@ class TestMeetup(BaseTest):
         response = self.client.post(
             '/api/v1/meetups', data=json.dumps(self.meetup2), content_type="application/json")
         self.assertEqual(response.status_code, 400)
+
+    def test_get_meetups_all_success(self):
+        response = self.client.get(
+            '/api/v1/meetups', data=json.dumps(self.meetup2), content_type="application/json")
+        self.assertEqual(response.status_code, 200)
