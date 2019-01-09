@@ -13,6 +13,7 @@ env:
 
 script:
   - python3 -m pytest --cov=app
+
   - coveralls
 
 after_success:

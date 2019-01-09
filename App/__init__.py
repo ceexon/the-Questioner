@@ -1,5 +1,6 @@
 from flask import Flask, Blueprint
 from App.api.v1.views.user_views import api_v1
+from App.api.v1.views.meet_views import api_v1
 
 my_app = Flask(__name__)
 

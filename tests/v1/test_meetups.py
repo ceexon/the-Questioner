@@ -57,4 +57,24 @@ class TestMeetup(BaseTest):
     def test_created_meetup_fail(self):
         response = self.client.post(
             '/api/v1/meetups', data=json.dumps(self.meetup2), content_type="application/json")
-        self.assertEqual(response.status_code, 201)
+        self.assertEqual(response.status_code, 400)
+
+    def test_get_meetups_all_success(self):
+        response = self.client.get(
+            '/api/v1/meetups', data=json.dumps(self.meetup2), content_type="application/json")
+        self.assertEqual(response.status_code, 200)
+
+    def test_get_single_meetup(self):
+        response = self.client.get(
+            '/api/v1/meetups/1', data=json.dumps(self.meetup2), content_type="application/json")
+        self.assertEqual(response.status_code, 200)
+
+    def test_get_single_meetup_(self):
+        response = self.client.get(
+            '/api/v1/meetups/k', data=json.dumps(self.meetup2), content_type="application/json")
+        self.assertEqual(response.status_code, 400)
+
+    def test_get_single_meetup_id_not_found(self):
+        response = self.client.get(
+            '/api/v1/meetups/29', data=json.dumps(self.meetup2), content_type="application/json")
+        self.assertEqual(response.status_code, 404)
