@@ -65,21 +65,23 @@ The Related Pivotal tracker board is **[Here](https://www.pivotaltracker.com/n/p
 
 ## Endpoints to use on postman
 
-| Endpoints                                 |               Functions               |
-| ----------------------------------------- | :-----------------------------------: |
-| POST/api/v1/signup                        |            create new user            |
-| POST/api/v1/login                         |        sign in to your account        |
-| POST/api/v1/meetup                        |             create meetup             |
-| GET/api/v1/meetup                         |            get all meetups            |
-| GET/api/v1/meetup/id                      |         get a specific meetup         |
-| POST/api/v1/meetup/id/question            |       add question for a meetup       |
-| GET/api/v1/meetup/id/question             | view all questions for a given meetup |
-| DELETE/api/v1/meetup/id                   |            delete a meetup            |
-| POST/api/v1/meetup/id/rsvp                |     respond to meetup invitation      |
-| PUT/api/v1/meetup/id/question/id/vote     |     upvote or downvote a question     |
-| POST/api/v1/meetup/id/question/id/        |       view a specific question        |
-| POST/api/v1/meetup/id/question/id/comment |         comment on a question         |
-| GET/api/v1/meetup/id/question/id/comment  |    view all comments on a question    |
+| Endpoints                                  |               Functions                |
+| ------------------------------------------ | :------------------------------------: |
+| POST/api/v1/signup                         |            create new user             |
+| POST/api/v1/login                          |        sign in to your account         |
+| POST/api/v1/meetups                        |             create meetups             |
+| GET/api/v1/meetups                         |            get all meetupss            |
+| GET/api/v1/meetups/&lt;id&gt;              |         get a specific meetups         |
+| GET/api/v1/meetups/upcoming                |        get all upcoming meetups        |
+| POST/api/v1/questions                      |       add question for a meetups       |
+| GET/api/v1/questions                       | view all questions for a given meetups |
+| POST/api/v1/meetups/&lt;id&gt;/rsvp        |     respond to meetups invitation      |
+| PATCH/api/v1/questions/&lt;id&gt;/upvote   |           upvote a question            |
+| PATCH/api/v1/questions/&lt;id&gt;/downvote |          downvote a question           |
+| POST/api/v1/questions/&lt;id&gt;/          |        view a specific question        |
+| POST/api/v1/questions/&lt;id&gt;/comment   |         comment on a question          |
+| GET/api/v1/questions/&lt;id&gt;/comment    |    view all comments on a question     |
+| DELETE/api/v1/meetups/&lt;id&gt;           |            delete a meetups            |
 
 ## Authors
 
