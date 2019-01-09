@@ -36,3 +36,18 @@ def add_meetup():
 @api_v1.route('/meetups', methods=['GET'])
 def get_all_meetups():
     return jsonify({"data": Meetups, "status": 200}), 200
+
+
+@api_v1.route('/meetups/<meet_id>', methods=['GET'])
+def get_single_meetups(meet_id):
+    try:
+        m_id = int(meet_id)
+
+    except:
+        return jsonify({"status": 400, "error": "invalid meetup id, use int"}), 400
+
+    for meet in Meetups:
+        if meet["id"] == m_id:
+            return jsonify({"status": 200, "data": meet}), 200
+
+    return jsonify({"status": 404, "error": "Meetup not found"}), 404
