@@ -12,22 +12,22 @@ def user_signup():
     data = request.get_json()
     try:
         if not data:
-            return jsonify({"status": 204, "error": "no data found"})
+            return jsonify({"status": 204, "error": "no data found"}), 204
         if not data["firstName"]:
-            return jsonify({"status": 422, "error": "first name is required"})
+            return jsonify({"status": 422, "error": "first name is required"}), 422
         if not data["lastName"]:
-            return jsonify({"status": 422, "error": "last name is required"})
+            return jsonify({"status": 422, "error": "last name is required"}), 422
         if not data["email"]:
-            return jsonify({"status": 422, "error": "email is required"})
+            return jsonify({"status": 422, "error": "email is required"}), 422
         if not data["phone"]:
-            return jsonify({"status": 422, "error": "phoone number is required"})
+            return jsonify({"status": 422, "error": "phoone number is required"}), 422
         if not data["password"]:
-            return jsonify({"status": 422, "error": "password is required"})
+            return jsonify({"status": 422, "error": "password is required"}), 422
         if not data["confirmPassword"]:
-            return jsonify({"status": 422, "error": "Please confirm ppassword"})
+            return jsonify({"status": 422, "error": "Please confirm ppassword"}), 422
 
     except:
-        return jsonify({"status": 400, "error": "Some necessary field is missing in your data"})
+        return jsonify({"status": 400, "error": "Some necessary field is missing in your data"}), 400
 
     new_user = {}
     for key in data:
@@ -48,14 +48,14 @@ def user_login():
     data = request.get_json()
     try:
         if not data:
-            return jsonify({"status": 204, "error": "no data found"})
+            return jsonify({"status": 204, "error": "no data found"}), 204
         if not data["userlog"]:
-            return jsonify({"status": 422, "error": "email is required"})
+            return jsonify({"status": 422, "error": "email is required"}), 422
         if not data["password"]:
-            return jsonify({"status": 422, "error": "password is required"})
+            return jsonify({"status": 422, "error": "password is required"}), 422
 
     except:
-        return jsonify({"status": 400, "error": "Some necessary field is missing in your data"})
+        return jsonify({"status": 400, "error": "Some necessary field is missing in your data"}), 400
 
     users = []
     for user in User:
