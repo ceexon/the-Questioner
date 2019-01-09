@@ -1,5 +1,7 @@
 import datetime
 time_now = datetime.datetime.now()
+target_time = datetime.datetime.now() + datetime.timedelta(days=7)
+target_time = target_time.replace(microsecond=0)
 
 User = [
     {
@@ -27,5 +29,18 @@ User = [
         "confirmPassword": "$$22BBkk",
         "regDate": time_now.strftime("%D"),
         "is Admin": False
+    }
+]
+
+
+Meetups = [
+    {
+        "id": 1,
+        "topic": "Kirigiti",
+        "description": "Passing hopefully",
+        "images": ["/home/zonecc/pictures/img1.png", "/home/zonecc/picturesimg2/png"],
+        "location": "Home",
+        "happenOn": target_time.strftime("%D %H:%M %p"),
+        "tags": ["#At home", "#coding", "#enjoy"]
     }
 ]
