@@ -1,0 +1,95 @@
+h1.activity-title {
+  text-align: center;
+  align-self: stretch;
+  width: 100%;
+  font-size: 2em;
+  font-weight: 300;
+  color: #2d37c4;
+  flex-grow: 1;
+  margin-top: 30px;
+}
+
+.top-feed {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.top-feed h1 {
+  width: 80%;
+  padding-bottom: 10px;
+  text-align: justify;
+  border-bottom: 2px solid #ccc;
+}
+
+.feed-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.feed-box:hover {
+  opacity: .8;
+  background-color: #cccccc99;
+}
+
+.feed-box .feed-image img {
+  width: 150px;
+  height: 100px;
+}
+
+div.feed-text {
+  padding: 10px 20px;
+}
+
+h3.meetup-title {
+  text-align: center;
+  color: #2d37c4;
+  letter-spacing: -1;
+  padding-bottom: 10px;
+}
+
+div.admin-feeds {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+div.add-meetup {
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+}
+
+button.add-mtp-btn {
+  color: #fff;
+  background-color: #4aca5f;
+  width: 30%;
+  margin: auto;
+  padding: 10px 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* responsive */
+@media screen and (max-width: 650px) {
+  div.meetup-details {
+    width: 100vw;
+    align-self: stretch;
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  button.add-mtp-btn {
+    width: 50%;
+    margin: auto;
+  }
+
+}
