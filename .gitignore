@@ -1,5 +1,11 @@
+
+#Folders
 .vscode/
 env/
-*.pyc
 __pyc__/
 __pycache__/
+
+
+#Files
+.pytest_cache
+*.pyc
