@@ -31,3 +31,8 @@ def add_meetup():
 
     Meetups.append(new_meetup)
     return jsonify({"status": 201, "data": new_meetup}), 201
+
+
+@api_v1.route('/meetups', methods=['GET'])
+def get_all_meetups():
+    return jsonify({"data": Meetups, "status": 200}), 200
