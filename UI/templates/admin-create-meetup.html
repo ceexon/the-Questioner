@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Questioner</title>
+  <link rel="icon" href="../static/images/logos/questioner-logo-2.png" type="image/icon" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../static/css/all.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="../static/css/style.css" />
+  <link rel="stylesheet" href="../static/css/meetups-main.css">
+  <link rel="stylesheet" href="../static/css/profiles.css">
+  <link rel="stylesheet" href="../static/css/admin-meet.css">
+  <script src="../static/js/profile.js"></script>
+</head>
+
+<body>
+  <header class="main-header" id="main-header">
+    <div class="landing-image-box">
+      <a href="index.html"><span class="page-title">Questioner</span></a>
+    </div>
+    <div class="nav-link-out">
+      <div class="meetups">
+        <a href="admin-meetups.html" class="nav-link"><span class="fas fa-home"></span> Meetups</a>
+      </div>
+      <div class="log-out">
+        <a href="index.html" class="nav-link"><span class="fas fa-sign-out-alt"></span> logout</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="main-user-page">
+    <span class="fas fa-bars"></span>
+
+    <section class="side-nav-panel hide-from-prof" id="prof-panel">
+      <span class="fas fa-times"></span>
+      <div class="user-name-pro">
+        <h3 class="my-name">
+          Admin
+        </h3>
+      </div>
+      <div class="user-prof-image">
+        <img src="../static/images/profiles/admin.png" alt="" class="prof-image">
+      </div>
+      <div class="my-likes">
+        <p class="what-i-like">
+          <span class="like like-1">Javascript | </span>
+          <span class="like like-2">Python | </span>
+          <span class="like like-3"> Cooking</span>
+        </p>
+      </div>
+      <div class="user-page-nav">
+        <nav class="navbar-prof">
+          <ul class="prof-page-link-list">
+            <li class="prof-page-link">
+              <a href="#" class="prof-page-a">
+                <span class="fas fa-user-edit"></span> Edit profile
+              </a>
+            </li>
+            <li class="prof-page-link">
+              <a href="admin-page.html" class="prof-page-a">
+                <span class="fas fa-chart-pie"></span> Meetup stats
+              </a>
+            </li>
+            <li class="prof-page-link">
+              <a href="admin-create-meetup.html" class="prof-page-a fav">
+                <span class="fas fa-plus"></span> add meetup
+              </a>
+            </li>
+            <li class="prof-page-link">
+              <a href="#" class="prof-page-a">
+                <span class="fas fa-award"></span> my meetups
+              </a>
+            </li>
+            <li class="prof-page-link">
+              <a href="admin-meetups.html" class="prof-page-a del">
+                <span class="fas fa-trash-alt"></span> delete meetup
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section class="main-content-prof" id="create-meetups">
+      <div class="add-meetup-box">
+        <form action="" class="add-meetup-form">
+          <div class="add-meetup-rows">
+            <h3 class="hosted-by">Title:</h3>
+            <input type="text" name="meet-title" class="meet-title" placeholder="Enter a Title for the Meetup" required><br>
+          </div>
+          <div class="add-meetup-rows split-row">
+            <div class="image-and">
+              <label for="avatar">Choose a cover picture:</label>
+              <input type="file" id="prof-image" name="profpic" accept="image/png, image/jpeg" value="Please add an image">
+            </div>
+            <div class="hosts">
+              <h3 class="hosted-by">Hosts:</h3>
+              <input type="text" class="host-names" placeholder="Host Name"> <br>
+              <input type="text" class="host-names" placeholder="Host Name"> <br>
+              <input type="text" class="host-names" placeholder="Host Name"> <br>
+            </div>
+            <div class="location-venue">
+              <h3 class="hosted-by">Location & Time:</h3>
+              <input class="host-names" type="text" placeholder="Location/Venue"> <br>
+              <input class="host-names" type="text" placeholder="Time and date"><br>
+            </div>
+          </div>
+          <div class="add-meetup-rows">
+            <textarea name="metup-desc" id="" cols="30" rows="10" placeholder="Enter some description for the meetup here"
+              class="desc-meetUp"></textarea>
+          </div>
+          <div class="add-meetup-rows btns-row">
+            <button class="add-meetup-adm">Add Meetup</button>
+            <button class="add-meetup-adm">Discard</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="footer-children footer-nav">
+        <ul class="navbar">
+          <li class="foot-nav-items">
+            <a href="#" class="foot-nav-links"><span class="fas fa-home"></span> Home</a>
+          </li>
+
+          <li class="foot-nav-items"><a href="#" class="foot-nav-links"><span class="fas fa-envelope"></span>
+              Contacts</a>
+          </li>
+
+          <li class="foot-nav-items">
+            <a href="#" class="foot-nav-links"><i class="fas fa-info-circle"></i> About</a>
+          </li>
+
+          <li class="foot-nav-items">
+            <a href="#" class="foot-nav-links"><span class="fas fa-comments"></span> FAQs</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-children response-form-box">
+        <form action="" class="resp-form">
+          <textarea name="" id="" rows="10" class="remark" placeholder="Leave a comment on how this page can be improved to serve you better"></textarea>
+          <input type="submit" role="button" value="send your comment" class="send-remark sign">
+        </form>
+      </div>
+
+    </footer>
+
+</body>
+
+</html>
