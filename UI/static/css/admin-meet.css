@@ -93,3 +93,69 @@ button.add-mtp-btn {
   }
 
 }
+
+#create-meetups {
+  padding: 50px;
+}
+
+form.add-meetup-form {
+  width: 100%;
+}
+
+div.add-meetup-rows {
+  padding: 20px;
+}
+
+input.meet-title,
+.host-names,
+.desc-meetUp {
+  padding: 15px;
+  width: 90%;
+  border-radius: 10px;
+  border: 1px solid #2d37c4;
+}
+
+div.image-and {
+  text-align: center;
+}
+
+div.hosts,
+.location-venue {
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.host-names {
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 60%;
+}
+
+h3.hosted-by {
+  color: #2d37c4;
+  font-size: 1.2em;
+  text-align: justify;
+  padding-left: 10px;
+  padding-bottom: 8px;
+}
+
+.desc-meetUp {
+  width: 80%;
+  margin: auto;
+}
+
+.add-meetup-adm {
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: #2d37c4;
+  font-weight: 500;
+  font-size: 1.3em;
+  width: 200px;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.btns-row {
+  text-align: justify;
+}
